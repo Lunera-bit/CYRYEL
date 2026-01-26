@@ -4,24 +4,36 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Política de Privacidad - CYRYEL</title>
+</head>
   <style>
-    body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:24px;color:#111}
-    h1,h2{color:#0b3a8c}
-    p{line-height:1.45}
-    .small{font-size:0.9em;color:#555}
+    :root{--base-font:16px;--accent:#0b3a8c;--max-width:820px}
+    body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:16px;color:#111;font-size:var(--base-font);line-height:1.6;background:#fff}
+    main{max-width:var(--max-width);margin:0 auto;padding:12px}
+    h1{color:var(--accent);font-size:1.25rem;margin-bottom:6px}
+    h2{color:var(--accent);font-size:1.05rem;margin:14px 0 6px}
+    p{margin:8px 0}
+    ul{margin:6px 0 6px 20px}
+    .small{font-size:0.9rem;color:#555}
+    a{color:var(--accent)}
+    @media(min-width:600px){
+      h1{font-size:1.5rem}
+      h2{font-size:1.1rem}
+      body{font-size:17px}
+    }
   </style>
 </head>
 <body>
-  <h1>Política de Privacidad — CYRYEL</h1>
+  <main>
+  <h1>Política de Privacidad — CYRYEL E.I.R.L</h1>
   <p class="small">Última actualización: 25/01/2026</p>
 
   <h2>1. Introducción</h2>
-  <p>En CYRYEL ("nosotros", "la App") respetamos tu privacidad. Esta política explica qué datos recopilamos, por qué los usamos y cuáles son tus derechos.</p>
+  <p>En CYRYEL E.I.R.L ("nosotros", "la App") respetamos tu privacidad. Esta política explica qué datos recopilamos, por qué los usamos y cuáles son tus derechos.</p>
 
   <h2>2. Datos que recopilamos</h2>
   <ul>
     <li><strong>Datos de autenticación:</strong> nombre, correo electrónico y foto de perfil (obtenidos de Google Sign-In).</li>
-    <li><strong>Datos de pedido:</strong> dirección de entrega, teléfono, artículos comprados, transacciones, historial de pedidos.</li>
+    <li><strong>Datos de pedido:</strong> dirección de entrega, teléfono, DNI o RUC (cuando sea necesario para facturación), artículos comprados, transacciones, historial de pedidos.</li>
     <li><strong>Datos técnicos:</strong> identificadores de dispositivo, tokens FCM para notificaciones push, direcciones IP, datos de uso anónimos.</li>
     <li><strong>Ubicación:</strong> cuando corres con permisos de geolocalización (por ejemplo, delivery), almacenamos coordenadas para rastrear entregas mientras dura el servicio.</li>
   </ul>
@@ -34,6 +46,7 @@
     <li>Enviar notificaciones relacionadas con pedidos y marketing (si aceptaste recibirlas).</li>
     <li>Soporte y atención al cliente.</li>
     <li>Cumplir obligaciones legales y de seguridad.</li>
+    <li>Cumplir obligaciones fiscales y emitir comprobantes (cuando se solicite DNI o RUC).</li>
   </ul>
 
   <h2>4. Base legal</h2>
@@ -54,13 +67,13 @@
   <p>Aplicamos medidas técnicas y organizativas para proteger los datos (cifrado, control de acceso, revisión de permisos). Sin embargo, ningún sistema es 100% infalible.</p>
 
   <h2>8. Tus derechos</h2>
-  <p>Puedes solicitar acceso, rectificación, portabilidad o supresión de tus datos, o limitar su tratamiento. Para ejercerlos escríbenos a <strong>yerespinoza.wolf@gmail.com</strong>.</p>
+  <p>Puedes solicitar acceso, rectificación, portabilidad o supresión de tus datos, o limitar su tratamiento. Para ejercerlos escríbenos a <a href="#" id="contact-link-privacy">Enviar un correo</a>.</p>
 
   <h2>8.1 Eliminación de datos</h2>
-  <p>Si deseas que borremos tu cuenta y todos tus datos personales, puedes solicitárnoslo enviando un correo a <strong>yerespinoza.wolf@gmail.com</strong> con el asunto "Solicitud de eliminación de datos" e indicando tu correo registrado y, si lo conoces, el identificador de usuario. Responderemos en un plazo razonable (normalmente 30 días) y procederemos a la supresión salvo que la conservación sea necesaria para cumplir obligaciones legales o resolver reclamaciones.</p>
+  <p>Si deseas que borremos tu cuenta y todos tus datos personales, puedes solicitárnoslo enviando un correo a <a href="#" class="contact-link-privacy">Enviar un correo</a> con el asunto "Solicitud de eliminación de datos" e indicando tu correo registrado y, si lo conoces, el identificador de usuario. Responderemos en un plazo razonable (normalmente 30 días) y procederemos a la supresión salvo que la conservación sea necesaria para cumplir obligaciones legales o resolver reclamaciones.</p>
 
   <h2>8.2 Declaración sobre menores</h2>
-  <p>Esta aplicación no está dirigida a menores de 13 años (o la edad legal aplicable en tu país). No recopilamos a sabiendas datos personales de menores. Si descubres que hemos recopilado datos de un menor sin el consentimiento parental, contáctanos en <strong>yerespinoza.wolf@gmail.com</strong> para solicitar la eliminación.</p>
+  <p>Esta aplicación no está dirigida a menores de 13 años (o la edad legal aplicable en tu país). No recopilamos a sabiendas datos personales de menores. Si descubres que hemos recopilado datos de un menor sin el consentimiento parental, contáctanos mediante el enlace <a href="#" class="contact-link-privacy">Enviar un correo</a> para solicitar la eliminación.</p>
 
   <h2>8.3 Uso de la ubicación</h2>
   <p>Esta aplicación recopila datos de ubicación para permitir el seguimiento de pedidos incluso cuando la aplicación está cerrada o no está en uso. La recopilación de ubicación se realiza sólo cuando otorgas permisos específicos y exclusivamente para proporcionar el servicio de entrega. Puedes revocar permisos de ubicación desde la configuración de tu dispositivo en cualquier momento.</p>
@@ -75,8 +88,28 @@
   <p>Podemos actualizar esta política. Publicaremos la fecha de la última modificación en esta página.</p>
 
   <h2>12. Contacto</h2>
-  <p>Si tienes preguntas o deseas ejercer tus derechos, contáctanos en <strong>yerespinoza.wolf@gmail.com</strong>.</p>
+  <p>Si tienes preguntas o deseas ejercer tus derechos, <a href="#" class="contact-link-privacy">Enviar un correo</a>.</p>
 
-  <p class="small">Nota: la dirección de soporte publicada es <em>yerespinoza.wolf@gmail.com</em>.</p>
+  <p class="small">Nota: la dirección de soporte está protegida y se revelará sólo al pulsar el enlace de contacto.</p>
+
+  </main>
+
+  <script>
+    (function(){
+      // correo invertido para evitar exposición directa en el HTML
+      const ob = 'moc.liamg@flow.onspiserey';
+      const email = ob.split('').reverse().join('');
+      const links = document.querySelectorAll('.contact-link-privacy');
+      if(!links || links.length === 0) return;
+      links.forEach(function(link){
+        link.addEventListener('click', function(e){
+          e.preventDefault();
+          // abrir composer de Gmail en nueva pestaña con destinatario prellenado
+          const url = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(email);
+          window.open(url, '_blank');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>

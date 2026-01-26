@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CYRYEL — Políticas</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+  <style>
+    body, html { height:100%; margin:0; font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif; }
+    ion-app, ion-content { height:100%; }
+    .center-outer { display:flex; align-items:center; justify-content:center; height:100vh; background:#f7f8fa }
+    .card-wrap{ width:92%; max-width:520px }
+    ion-card{ --ion-background-color: #ffffff; box-shadow:0 6px 20px rgba(0,0,0,0.08); }
+    .logo{ display:block; margin:18px auto 6px; width:84px; height:84px; border-radius:12px; background:linear-gradient(135deg,#0b3a8c,#2a6fb8); color:#fff; display:flex; align-items:center; justify-content:center; font-weight:700 }
+    h1{ text-align:center; font-size:1.05rem; margin:6px 0 2px }
+    p.lead{ text-align:center; color:#444; margin:0 12px 12px }
+    .links{ padding:12px }
+    ion-button{ margin-top:8px }
+  </style>
+</head>
+<body>
+  <ion-app>
+    <ion-content>
+      <div class="center-outer">
+        <div class="card-wrap">
+          <ion-card>
+            <div style="padding:18px 16px">
+              <div class="logo">CY</div>
+              <h1>CYRYEL E.I.R.L</h1>
+              <p class="lead">Bienvenido. Consulta nuestras políticas antes de usar la aplicación.</p>
+            </div>
+            <div class="links">
+              <ion-button expand="block" href="privacy-policy.html">Política de Privacidad</ion-button>
+              <ion-button expand="block" fill="clear" href="terms-and-conditions.html">Términos y Condiciones</ion-button>
+            </div>
+          </ion-card>
+        </div>
+      </div>
+    </ion-content>
+  </ion-app>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+</body>
+</html>
