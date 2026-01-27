@@ -76,13 +76,20 @@
   <p>Aplicamos medidas técnicas y organizativas para proteger los datos (cifrado, control de acceso, revisión de permisos). Sin embargo, ningún sistema es 100% infalible.</p>
 
   <h2>8. Tus derechos</h2>
-  <p>Puedes solicitar acceso, rectificación, portabilidad o supresión de tus datos, o limitar su tratamiento. Para ejercerlos escríbenos a <a href="#" id="contact-link-privacy">Enviar un correo</a>.</p>
+  <p>Puedes solicitar acceso, rectificación, portabilidad o supresión de tus datos, o limitar su tratamiento. Para ejercerlos escríbenos a <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a>.</p>
 
-  <h2>8.1 Eliminación de datos</h2>
-  <p>Si deseas que borremos tu cuenta y todos tus datos personales, puedes solicitárnoslo enviando un correo a <a href="#" class="contact-link-privacy">Enviar un correo</a> con el asunto "Solicitud de eliminación de datos" e indicando tu correo registrado y, si lo conoces, el identificador de usuario. Responderemos en un plazo razonable (normalmente 30 días) y procederemos a la supresión salvo que la conservación sea necesaria para cumplir obligaciones legales o resolver reclamaciones.</p>
+  <h2 id="account-deletion">8.1 Eliminación de datos</h2>
+    <p>Si deseas que borremos tu cuenta y todos tus datos personales, solicita la eliminación enviando un correo a <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a> con asunto "Solicitud de eliminación de datos" e indicando tu correo registrado y, si lo conoces, el identificador de usuario. Responderemos en un plazo razonable (normalmente 30 días) y procederemos a la supresión salvo que la conservación sea necesaria para cumplir obligaciones legales o resolver reclamaciones.</p>
+  <p><strong>Datos que se eliminarán:</strong> perfil (nombre, email), direcciones, foto, tokens FCM.</p>
+  <p><strong>Datos que pueden conservarse:</strong> registros de transacciones y logs de facturación (hasta 5 años) por requerimientos legales o contables.</p>
+
+  <h3>Account deletion (English)</h3>
+  <p>To request deletion of your account and associated personal data, send an email to <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a> with subject "Delete account - Tienda CYRYEL" and include the email associated with the account. We will process the request within 30 business days and will delete the account except where retention is necessary for legal compliance or dispute resolution.</p>
+  <p><strong>Data to be deleted:</strong> profile (name, email), addresses, photo, FCM tokens.</p>
+  <p><strong>Data that may be retained:</strong> transaction records and billing logs (up to 5 years) for legal or accounting requirements.</p>
 
   <h2>8.2 Declaración sobre menores</h2>
-  <p>Esta aplicación no está dirigida a menores de 13 años (o la edad legal aplicable en tu país). No recopilamos a sabiendas datos personales de menores. Si descubres que hemos recopilado datos de un menor sin el consentimiento parental, contáctanos mediante el enlace <a href="#" class="contact-link-privacy">Enviar un correo</a> para solicitar la eliminación.</p>
+  <p>Esta aplicación no está dirigida a menores de 13 años (o la edad legal aplicable en tu país). No recopilamos a sabiendas datos personales de menores. Si descubres que hemos recopilado datos de un menor sin el consentimiento parental, contáctanos mediante el enlace <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a> para solicitar la eliminación.</p>
 
   <h2>8.3 Uso de la ubicación</h2>
   <p>Esta aplicación recopila datos de ubicación para permitir el seguimiento de pedidos incluso cuando la aplicación está cerrada o no está en uso. La recopilación de ubicación se realiza sólo cuando otorgas permisos específicos y exclusivamente para proporcionar el servicio de entrega. Puedes revocar permisos de ubicación desde la configuración de tu dispositivo en cualquier momento.</p>
@@ -97,28 +104,12 @@
   <p>Podemos actualizar esta política. Publicaremos la fecha de la última modificación en esta página.</p>
 
   <h2>12. Contacto</h2>
-  <p>Si tienes preguntas o deseas ejercer tus derechos, <a href="#" class="contact-link-privacy">Enviar un correo</a>.</p>
+    <p>Si tienes preguntas o deseas ejercer tus derechos, <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a>.</p>
 
   <p class="small">Nota: la dirección de soporte está protegida y se revelará sólo al pulsar el enlace de contacto.</p>
 
   </main>
 
-  <script>
-    (function(){
-      // correo invertido para evitar exposición directa en el HTML
-      const ob = 'moc.liamg@flow.onspiserey';
-      const email = ob.split('').reverse().join('');
-      const links = document.querySelectorAll('.contact-link-privacy');
-      if(!links || links.length === 0) return;
-      links.forEach(function(link){
-        link.addEventListener('click', function(e){
-          e.preventDefault();
-          // abrir composer de Gmail en nueva pestaña con destinatario prellenado
-          const url = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(email);
-          window.open(url, '_blank');
-        });
-      });
-    })();
-  </script>
+  <!-- Contact links use visible mailto: for reviewers and crawlers -->
 </body>
 </html>
