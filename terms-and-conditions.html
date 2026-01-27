@@ -73,7 +73,7 @@
     <p>Todos los contenidos de la App son propiedad de CYRYEL o de sus licenciantes y están protegidos por las leyes de propiedad intelectual. Queda prohibida su reproducción no autorizada.</p>
 
     <h2>12. Datos personales</h2>
-    <p>Tratamos tus datos conforme a nuestra <a href="/CYRYEL/privacy-policy.html">Política de Privacidad</a>. Entre los datos que tratamos se incluyen nombre, correo, teléfono, DNI/RUC (cuando corresponda), direcciones, tokens FCM y datos de uso. Para consultas o ejercer derechos <a href="#" class="contact-link-terms">Enviar un correo</a>.</p>
+    <p>Tratamos tus datos conforme a nuestra <a href="/CYRYEL/privacy-policy.html">Política de Privacidad</a>. Entre los datos que tratamos se incluyen nombre, correo, teléfono, DNI/RUC (cuando corresponda), direcciones, tokens FCM y datos de uso. Para consultas o ejercer derechos <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a>.</p>
 
     <h2>13. Uso del servicio y conducta</h2>
     <p>El Usuario se obliga a utilizar la App conforme a la ley y buenas costumbres. Está prohibido usar la App para fines ilícitos, crear cuentas múltiples con intención fraudulenta, falsificar identidades o realizar pedidos falsos.</p>
@@ -88,25 +88,12 @@
     <p>Estos Términos se rigen por la legislación de la República del Perú. Para la resolución de controversias, las partes se someten a la jurisdicción exclusiva de los tribunales de la ciudad de Chancay, Perú.</p>
 
     <h2>17. Contacto</h2>
-    <p>Consultas y soporte: <a href="#" class="contact-link-terms">Enviar un correo</a></p>
+    <p>Consultas y soporte: <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a></p>
 
     <p class="small">Nota: Este documento adapta términos generales al funcionamiento real de la aplicación (pedidos, seguimiento por ubicación, tokens FCM, pagos online y contra entrega, cupones, DNI/RUC para facturación). Ver también la <a href="/CYRYEL/privacy-policy.html">Política de Privacidad</a>.</p>
 
     <script>
-      (function(){
-        // correo invertido para evitar exposición directa en el HTML
-        const ob = 'moc.liamg@flow.onspiserey';
-        const email = ob.split('').reverse().join('');
-        const links = document.querySelectorAll('.contact-link-terms');
-        if(!links || links.length === 0) return;
-        links.forEach(function(link){
-          link.addEventListener('click', function(e){
-            e.preventDefault();
-            const url = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(email);
-            window.open(url, '_blank');
-          });
-        });
-      })();
+      // Contact links are explicit mailto: links for compatibility with reviewers and crawlers.
     </script>
   </main>
 </body>
