@@ -11,6 +11,8 @@
     main{max-width:var(--max-width);margin:0 auto;padding:12px}
     h1{color:var(--accent);font-size:1.25rem;margin-bottom:6px}
     h2{color:var(--accent);font-size:1.05rem;margin:14px 0 6px}
+    h3{color:var(--accent);font-size:1.05rem;margin:12px 0 6px}
+    h4{color:var(--accent);font-size:1rem;margin:10px 0 6px}
     p{margin:8px 0}
     ul{margin:6px 0 6px 20px}
     .small{font-size:0.9rem;color:#555}
@@ -35,7 +37,7 @@
     <li><strong>Datos de autenticación:</strong> nombre, correo electrónico y foto de perfil (obtenidos de Google Sign-In).</li>
     <li><strong>Datos de pedido:</strong> dirección de entrega, teléfono, DNI o RUC (cuando sea necesario para facturación), artículos comprados, transacciones, historial de pedidos.</li>
     <li><strong>Datos técnicos:</strong> identificadores de dispositivo, tokens FCM para notificaciones push, direcciones IP, datos de uso anónimos.</li>
-    <li><strong>Ubicación:</strong> cuando corres con permisos de geolocalización (por ejemplo, delivery), almacenamos coordenadas para rastrear entregas mientras dura el servicio.</li>
+    <li><strong>Ubicación:</strong> cuando otorgas permisos de geolocalización (por ejemplo, para delivery), almacenamos coordenadas para rastrear entregas mientras dura el servicio.</li>
   </ul>
 
   <h2>Direcciones IP</h2>
@@ -78,20 +80,23 @@
   <h2>8. Tus derechos</h2>
   <p>Puedes solicitar acceso, rectificación, portabilidad o supresión de tus datos, o limitar su tratamiento. Para ejercerlos escríbenos a <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a>.</p>
 
-  <h2 id="account-deletion">8.1 Eliminación de datos</h2>
-    <p>Si deseas que borremos tu cuenta y todos tus datos personales, solicita la eliminación enviando un correo a <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a> con asunto "Solicitud de eliminación de datos" e indicando tu correo registrado y, si lo conoces, el identificador de usuario. Responderemos en un plazo razonable (normalmente 30 días) y procederemos a la supresión salvo que la conservación sea necesaria para cumplir obligaciones legales o resolver reclamaciones.</p>
-  <p><strong>Datos que se eliminarán:</strong> perfil (nombre, email), direcciones, foto, tokens FCM.</p>
-  <p><strong>Datos que pueden conservarse:</strong> registros de transacciones y logs de facturación (hasta 5 años) por requerimientos legales o contables.</p>
+  <h3 id="account-deletion">8.1 Eliminación de datos</h3>
+      <p>Si deseas que borremos tu cuenta y todos tus datos personales, solicita la eliminación enviando un correo a <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a> con asunto "Solicitud de eliminación de datos" e indicando tu correo registrado y, si lo conoces, el identificador de usuario. Responderemos en un plazo razonable (normalmente 30 días) y procederemos a la supresión salvo que la conservación sea necesaria para cumplir obligaciones legales o resolver reclamaciones.</p>
+    <p><strong>Datos que se eliminarán:</strong> perfil (nombre, email), direcciones, foto, tokens FCM.</p>
+    <p><strong>Datos que pueden conservarse:</strong> registros de transacciones y logs de facturación (hasta 5 años) por requerimientos legales o contables.</p>
 
-  <h3>Account deletion (English)</h3>
-  <p>To request deletion of your account and associated personal data, send an email to <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a> with subject "Delete account - Tienda CYRYEL" and include the email associated with the account. We will process the request within 30 business days and will delete the account except where retention is necessary for legal compliance or dispute resolution.</p>
-  <p><strong>Data to be deleted:</strong> profile (name, email), addresses, photo, FCM tokens.</p>
-  <p><strong>Data that may be retained:</strong> transaction records and billing logs (up to 5 years) for legal or accounting requirements.</p>
+    <p><strong>Identificadores de transacción de pago:</strong> En el proceso de pago (checkout) la aplicación solicita y almacena un identificador de transacción de pago (<code>transactionId</code>) y la etiqueta del método de pago (<code>paymentMethod</code>) asociado al pedido únicamente cuando el método de pago seleccionado requiere un identificador de transacción (por ejemplo, pagos online procesados por proveedores externos). Si el cliente selecciona contra entrega, no se solicita ni almacena ningún <code>transactionId</code>. Estos datos se usan para conciliar pagos, gestionar reembolsos y fines contables. No se almacenan números completos de tarjeta en la app; los pagos son procesados por proveedores externos.</p>
 
-  <h2>8.2 Declaración sobre menores</h2>
+    <h4>Account deletion (English)</h4>
+    <p>To request deletion of your account and associated personal data, send an email to <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a> with subject "Delete account - Tienda CYRYEL" and include the email associated with the account. We will process the request within 30 business days and will delete the account except where retention is necessary for legal compliance or dispute resolution.</p>
+    <p><strong>Data to be deleted:</strong> profile (name, email), addresses, photo, FCM tokens.</p>
+    <p><strong>Data that may be retained:</strong> transaction records and billing logs (up to 5 years) for legal or accounting requirements.</p>
+    <p><strong>Payment transaction identifiers:</strong> At checkout the app requests and stores a payment transaction identifier (<code>transactionId</code>) and a payment method label (<code>paymentMethod</code>) associated with an order only when the selected payment method requires a transaction reference (for example, online payments processed by external providers). If the customer selects cash-on-delivery (contra entrega), no <code>transactionId</code> is requested or stored. These values are used to reconcile payments, support refunds, and for accounting. Full payment card numbers are not stored in the app; payments are processed by external payment providers.</p>
+
+  <h3>8.2 Declaración sobre menores</h3>
   <p>Esta aplicación no está dirigida a menores de 13 años (o la edad legal aplicable en tu país). No recopilamos a sabiendas datos personales de menores. Si descubres que hemos recopilado datos de un menor sin el consentimiento parental, contáctanos mediante el enlace <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a> para solicitar la eliminación.</p>
 
-  <h2>8.3 Uso de la ubicación</h2>
+  <h3>8.3 Uso de la ubicación</h3>
   <p>Esta aplicación recopila datos de ubicación para permitir el seguimiento de pedidos incluso cuando la aplicación está cerrada o no está en uso. La recopilación de ubicación se realiza sólo cuando otorgas permisos específicos y exclusivamente para proporcionar el servicio de entrega. Puedes revocar permisos de ubicación desde la configuración de tu dispositivo en cualquier momento.</p>
 
   <h2>9. Transferencias internacionales</h2>
@@ -106,7 +111,7 @@
   <h2>12. Contacto</h2>
     <p>Si tienes preguntas o deseas ejercer tus derechos, <a href="mailto:yerespinoza.wolf@gmail.com">yerespinoza.wolf@gmail.com</a>.</p>
 
-  <p class="small">Nota: la dirección de soporte está protegida y se revelará sólo al pulsar el enlace de contacto.</p>
+  
 
   </main>
 
